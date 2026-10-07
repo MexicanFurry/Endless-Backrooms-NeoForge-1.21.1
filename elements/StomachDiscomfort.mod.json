@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Stomach Discomfort",
+    "icon": "stomach_discomfort",
+    "color": {
+      "value": -3345037,
+      "falpha": 0.0
+    },
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": "StomachDiscomfortEffectStartedapplied",
+    "onActiveTick": "StomachDiscomfortOnEffectActiveTick"
+  }
+}

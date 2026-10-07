@@ -1,0 +1,34 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.IRON_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.REDSTONE",
+      "Items.FLINT"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.COPPER_INGOT",
+      "Items.IRON_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.REDSTONE",
+      "Items.COPPER_INGOT",
+      "Items.FLINT",
+      "Items.FLINT",
+      "Items.FLINT"
+    ],
+    "recipeReturnStack": "CUSTOM:Battery",
+    "name": "battery",
+    "namespace": "mod"
+  }
+}

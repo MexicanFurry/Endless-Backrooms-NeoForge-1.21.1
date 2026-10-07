@@ -1,0 +1,62 @@
+{
+  "level0_ambient": {
+    "subtitle": "subtitles.level0_ambient",
+    "sounds": [
+      {
+        "name": "backrooms:level_0_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "glitch": {
+    "sounds": [
+      {
+        "name": "backrooms:glitch_sound",
+        "stream": false
+      }
+    ]
+  },
+  "stomach_discomfort": {
+    "sounds": [
+      {
+        "name": "backrooms:stomach_discomfort_sound",
+        "stream": false
+      }
+    ]
+  },
+  "flashlight_click": {
+    "sounds": [
+      {
+        "name": "backrooms:flashlight_click",
+        "stream": false
+      }
+    ]
+  },
+  "lights_on": {
+    "subtitle": "subtitles.lights_on",
+    "sounds": [
+      {
+        "name": "backrooms:lights_on",
+        "stream": false
+      }
+    ]
+  },
+  "light_on": {
+    "subtitle": "subtitles.light_on",
+    "sounds": [
+      {
+        "name": "backrooms:light_on",
+        "stream": false
+      }
+    ]
+  },
+  "light_off": {
+    "subtitle": "subtitles.light_off",
+    "sounds": [
+      {
+        "name": "backrooms:light_off",
+        "stream": false
+      }
+    ]
+  }
+}

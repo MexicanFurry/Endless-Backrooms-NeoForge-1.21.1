@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "structure",
+  "definition": {
+    "structure": "hause",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "spacing": 150,
+    "separation": 100,
+    "restrictionBiomes": [
+      "plains",
+      "snowy_tundra",
+      "meadow",
+      "birch_forest",
+      "mutated_forest",
+      "forest",
+      "mutated_birch_forest"
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}
