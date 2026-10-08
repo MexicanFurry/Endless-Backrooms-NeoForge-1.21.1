@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "backrooms:block/level_0_yellow_wallpaper",
-    "particle": "backrooms:block/level_0_yellow_wallpaper"
-  },
-  "render_type": "solid"
-}

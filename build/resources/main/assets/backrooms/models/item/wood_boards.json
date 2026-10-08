@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "backrooms:item/wood_boards"
-  },
-  "render_type": "translucent"
-}
