@@ -1,21 +1,21 @@
 # 🗺️ Roadmap (V0)
 
 ## ✅ Completed
-- [x] Basic Level 0 world generation and its respective blocks
-- [x] More floors for Level 0
-- [x] Level 0 Event: Flickering Lights
-- [x] Level 0 Event: Blackout
+- Basic Level 0 world generation and its respective blocks
+- More floors for Level 0
+- Level 0 Event: Flickering Lights
+- Level 0 Event: Blackout
+- The Manila Room
 
 ## 🔨 In Development
-- [ ] Megarooms
-- [ ] Uses for items obtained from Level 0.
+- Megarooms for Level 0
+- The Red Rooms
 
-## 📅
-- [ ] The Manila Room
-- [ ] The Red Rooms
-- [ ] The Torment
-- [ ] The Dullness
-- [ ] Sublevels
+## 📅 Planned
+- The Torment
+- The Dullness
+- Sublevels
+- Uses for items obtained from Level 0
 
 ## 💭 Future Ideas
 
