@@ -40,14 +40,20 @@ public class BackroomsModItems {
 	public static final DeferredItem<Item> LEVEL_0_CEILING;
 	public static final DeferredItem<Item> LEVEL_0_YELLOW_WALLPAPER_BLOCK_BASE;
 	public static final DeferredItem<Item> WOOD_BOARDS;
-	public static final DeferredItem<Item> PORTAL;
-	public static final DeferredItem<Item> PORTAL_1;
 	public static final DeferredItem<Item> FLASHLIGHT_OFF;
 	public static final DeferredItem<Item> FLASHLIGHT_ON;
 	public static final DeferredItem<Item> BATTERY;
 	public static final DeferredItem<Item> FLASHLIGHT_LIGHT;
 	public static final DeferredItem<Item> NOT_WATER_BOTTLE;
 	public static final DeferredItem<Item> NOT_WATER_BUCKET;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_BLOCK;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_STAIRS;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_SLAB;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_ROLL;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_BLOCK_1;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_BLOCK_2;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP;
+	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_ROLL_1;
 	static {
 		LEVEL_0_YELLOW_WALLPAPER_ROLL = REGISTRY.register("level_0_yellow_wallpaper_roll", Level0YellowWallpaperRollItem::new);
 		LEVEL_0_YELLOW_WET_CARPET = REGISTRY.register("level_0_yellow_wet_carpet", Level0YellowWetCarpetItem::new);
@@ -66,14 +72,20 @@ public class BackroomsModItems {
 		LEVEL_0_CEILING = block(BackroomsModBlocks.LEVEL_0_CEILING);
 		LEVEL_0_YELLOW_WALLPAPER_BLOCK_BASE = block(BackroomsModBlocks.LEVEL_0_YELLOW_WALLPAPER_BLOCK_BASE);
 		WOOD_BOARDS = block(BackroomsModBlocks.WOOD_BOARDS);
-		PORTAL = block(BackroomsModBlocks.PORTAL, new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
-		PORTAL_1 = block(BackroomsModBlocks.PORTAL_1, new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 		FLASHLIGHT_OFF = REGISTRY.register("flashlight_off", FlashlightOffItem::new);
 		FLASHLIGHT_ON = REGISTRY.register("flashlight_on", FlashlightOnItem::new);
 		BATTERY = REGISTRY.register("battery", BatteryItem::new);
 		FLASHLIGHT_LIGHT = block(BackroomsModBlocks.FLASHLIGHT_LIGHT, new Item.Properties().rarity(Rarity.RARE));
 		NOT_WATER_BOTTLE = REGISTRY.register("not_water_bottle", NotWaterBottleItem::new);
 		NOT_WATER_BUCKET = REGISTRY.register("not_water_bucket", NotWaterItem::new);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK);
+		LEVEL_0_MANILA_WALLPAPER_STAIRS = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_STAIRS);
+		LEVEL_0_MANILA_WALLPAPER_SLAB = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_SLAB);
+		LEVEL_0_MANILA_WALLPAPER_ROLL = REGISTRY.register("level_0_manila_wallpaper_roll", Level0ManilaWallpaperRollItem::new);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK_1 = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_1);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK_2 = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2);
+		LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP = block(BackroomsModBlocks.LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP);
+		LEVEL_0_MANILA_WALLPAPER_ROLL_1 = REGISTRY.register("level_0_manila_wallpaper_roll_1", Level0ManilaWallpaperRoll1Item::new);
 	}
 
 	// Start of user code block custom items

@@ -128,6 +128,8 @@ public class BackroomsModVariables {
 		public double Level0EventBlackoutTimer = 6000.0;
 		public double Level0EventFlickeringLightsTimer = 600.0;
 		public double Level0MovingWallsTimer = 600.0;
+		public boolean isTheManilaRoomPresent = false;
+		public boolean isLevel0Room5Present = false;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -143,6 +145,8 @@ public class BackroomsModVariables {
 			Level0EventBlackoutTimer = nbt.getDouble("Level0EventBlackoutTimer");
 			Level0EventFlickeringLightsTimer = nbt.getDouble("Level0EventFlickeringLightsTimer");
 			Level0MovingWallsTimer = nbt.getDouble("Level0MovingWallsTimer");
+			isTheManilaRoomPresent = nbt.getBoolean("isTheManilaRoomPresent");
+			isLevel0Room5Present = nbt.getBoolean("isLevel0Room5Present");
 		}
 
 		@Override
@@ -154,6 +158,8 @@ public class BackroomsModVariables {
 			nbt.putDouble("Level0EventBlackoutTimer", Level0EventBlackoutTimer);
 			nbt.putDouble("Level0EventFlickeringLightsTimer", Level0EventFlickeringLightsTimer);
 			nbt.putDouble("Level0MovingWallsTimer", Level0MovingWallsTimer);
+			nbt.putBoolean("isTheManilaRoomPresent", isTheManilaRoomPresent);
+			nbt.putBoolean("isLevel0Room5Present", isLevel0Room5Present);
 			return nbt;
 		}
 

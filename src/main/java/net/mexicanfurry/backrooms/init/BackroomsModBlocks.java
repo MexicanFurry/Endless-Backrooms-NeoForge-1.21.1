@@ -27,10 +27,15 @@ public class BackroomsModBlocks {
 	public static final DeferredBlock<Block> LEVEL_0_CEILING;
 	public static final DeferredBlock<Block> LEVEL_0_YELLOW_WALLPAPER_BLOCK_BASE;
 	public static final DeferredBlock<Block> WOOD_BOARDS;
-	public static final DeferredBlock<Block> PORTAL;
-	public static final DeferredBlock<Block> PORTAL_1;
 	public static final DeferredBlock<Block> FLASHLIGHT_LIGHT;
 	public static final DeferredBlock<Block> NOT_WATER;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_STAIRS;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_SLAB;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_1;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_2;
+	public static final DeferredBlock<Block> LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP;
+	public static final DeferredBlock<Block> VOID_BLOCK;
 	static {
 		LEVEL_0_YELLOW_WALLPAPER_BLOCK = REGISTRY.register("level_0_yellow_wallpaper_block", Level0YellowWallpaperBlockBlock::new);
 		LEVEL_0_YELLOW_WET_CARPET_BLOCK = REGISTRY.register("level_0_yellow_wet_carpet_block", Level0YellowWetCarpetBlockBlock::new);
@@ -46,10 +51,15 @@ public class BackroomsModBlocks {
 		LEVEL_0_CEILING = REGISTRY.register("level_0_ceiling", Level0CeilingBlock::new);
 		LEVEL_0_YELLOW_WALLPAPER_BLOCK_BASE = REGISTRY.register("level_0_yellow_wallpaper_block_base", Level0YellowWallpaperBlockBaseBlock::new);
 		WOOD_BOARDS = REGISTRY.register("wood_boards", WoodBoardsBlock::new);
-		PORTAL = REGISTRY.register("portal", PortalBlock::new);
-		PORTAL_1 = REGISTRY.register("portal_1", Portal1Block::new);
 		FLASHLIGHT_LIGHT = REGISTRY.register("flashlight_light", FlashlightLightBlock::new);
 		NOT_WATER = REGISTRY.register("not_water", NotWaterBlock::new);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK = REGISTRY.register("level_0_manila_wallpaper_block", Level0ManilaWallpaperBlockBlock::new);
+		LEVEL_0_MANILA_WALLPAPER_STAIRS = REGISTRY.register("level_0_manila_wallpaper_stairs", Level0ManilaWallpaperStairsBlock::new);
+		LEVEL_0_MANILA_WALLPAPER_SLAB = REGISTRY.register("level_0_manila_wallpaper_slab", Level0ManilaWallpaperSlabBlock::new);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK_1 = REGISTRY.register("level_0_manila_wallpaper_block_1", Level0ManilaWallpaperBlock1Block::new);
+		LEVEL_0_MANILA_WALLPAPER_BLOCK_2 = REGISTRY.register("level_0_manila_wallpaper_block_2", Level0ManilaWallpaperBlock2Block::new);
+		LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP = REGISTRY.register("level_0_manila_room_fluorescent_lamp", Level0ManilaRoomFluorescentLampBlock::new);
+		VOID_BLOCK = REGISTRY.register("void_block", VoidBlockBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

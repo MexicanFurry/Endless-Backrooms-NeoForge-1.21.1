@@ -93,12 +93,10 @@ public class NotWaterCollectProcedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
-					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack22 = new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()).copy();
-						_setstack22.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack22);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);

@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.Items;
@@ -109,6 +110,51 @@ public class StrippingBackroomsBlocksProcedure {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_SLAB.get()) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_YELLOW_WET_CARPET.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_STAIRS.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_SLAB.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_1.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL_1.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.DARK_OAK_SLAB));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

@@ -25,6 +25,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mexicanfurry.backrooms.network.BackroomsModVariables;
 import net.mexicanfurry.backrooms.BackroomsMod;
@@ -51,14 +53,23 @@ public class NoClipEventProcedure {
 				_vars.NoClip = 20;
 				_vars.markSyncDirty();
 			}
-			if (((entity.level().dimension()) == Level.OVERWORLD || (entity.level().dimension()) == Level.NETHER || (entity.level().dimension()) == Level.END) && entity.isInWall()
-					&& (getEntityGameType(entity) == GameType.SURVIVAL || getEntityGameType(entity) == GameType.CREATIVE)) {
+			if (((entity.level().dimension()) == Level.OVERWORLD || (entity.level().dimension()) == Level.NETHER || (entity.level().dimension()) == Level.END) && entity.isInWall() && !(getEntityGameType(entity) == GameType.SPECTATOR)) {
 				if (Math.random() < 0.25) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:glitch")), SoundSource.NEUTRAL, 1, 1);
 						} else {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:glitch")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("backrooms:first_no_clip"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 					BackroomsMod.queueServerWork(100, () -> {

@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="backrooms"
-version="0.1.1.002"
+version="0.2.0.000"
 displayName="Endless Backrooms"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
@@ -22,7 +22,7 @@ description="Just a Backrooms mod"
 [[dependencies.backrooms]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.232,)"
+    versionRange="[21.1.238,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -33,7 +33,19 @@ description="Just a Backrooms mod"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.backrooms]]
+    modId="immersive_portals_core"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
+[[dependencies.backrooms]]
+    modId="refurbished_furniture"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.backrooms]]
     modId="jei"
     type="optional"

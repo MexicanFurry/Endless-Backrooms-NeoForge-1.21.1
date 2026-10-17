@@ -23,6 +23,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mexicanfurry.backrooms.network.BackroomsModVariables;
 import net.mexicanfurry.backrooms.init.BackroomsModGameRules;
@@ -64,6 +66,26 @@ public class SpontaneousNoClipEventProcedure {
 								for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 									_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance, false));
 								_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+							}
+						}
+						if (entity instanceof ServerPlayer _player) {
+							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("backrooms:first_no_clip"));
+							if (_adv != null) {
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
+						}
+						if (entity instanceof ServerPlayer _player) {
+							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("backrooms:accidental_no_clip"));
+							if (_adv != null) {
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
 							}
 						}
 					}

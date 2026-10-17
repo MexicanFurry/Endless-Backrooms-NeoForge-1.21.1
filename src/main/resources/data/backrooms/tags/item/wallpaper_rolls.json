@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "backrooms:level_0_yellow_wallpaper_roll"
+    "backrooms:level_0_manila_wallpaper_roll",
+    "backrooms:level_0_yellow_wallpaper_roll",
+    "backrooms:level_0_manila_wallpaper_roll_1"
   ]
 }

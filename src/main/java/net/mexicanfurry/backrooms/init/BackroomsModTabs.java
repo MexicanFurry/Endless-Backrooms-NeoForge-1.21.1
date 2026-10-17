@@ -30,6 +30,11 @@ public class BackroomsModTabs {
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WALLPAPER_BLOCK.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WALLPAPER_STAIRS.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WALLPAPER_SLAB.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_1.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_STAIRS.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_SLAB.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_BLOCK.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_STAIRS.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_SLAB.get().asItem());
@@ -41,6 +46,8 @@ public class BackroomsModTabs {
 				tabData.accept(BackroomsModBlocks.WOOD_BOARDS.get().asItem());
 				tabData.accept(BackroomsModItems.FLUORESCENT_LAMP_SHARD.get());
 				tabData.accept(BackroomsModItems.LEVEL_0_YELLOW_WALLPAPER_ROLL.get());
+				tabData.accept(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get());
+				tabData.accept(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL_1.get());
 				tabData.accept(BackroomsModItems.LEVEL_0_YELLOW_WET_CARPET.get());
 				tabData.accept(BackroomsModItems.NOT_WATER_BOTTLE.get());
 				tabData.accept(BackroomsModItems.NOT_WATER_BUCKET.get());
@@ -52,10 +59,6 @@ public class BackroomsModTabs {
 			tabData.accept(BackroomsModBlocks.WOOD_BLOCK.get().asItem());
 			tabData.accept(BackroomsModBlocks.WOOD_STAIRS.get().asItem());
 			tabData.accept(BackroomsModBlocks.WOOD_SLAB.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
-			if (tabData.hasPermissions()) {
-				tabData.accept(BackroomsModBlocks.PORTAL.get().asItem());
-			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(BackroomsModItems.FLASHLIGHT_OFF.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
