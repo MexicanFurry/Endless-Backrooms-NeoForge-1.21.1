@@ -154,7 +154,7 @@ public class StrippingBackroomsBlocksProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.DARK_OAK_SLAB));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.STRIPPED_DARK_OAK_WOOD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

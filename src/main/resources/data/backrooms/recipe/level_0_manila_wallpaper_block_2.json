@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "backrooms:level_0_manila_wallpaper_block"
+    },
+    "b": {
+      "item": "minecraft:stripped_dark_oak_wood"
+    }
+  },
+  "result": {
+    "id": "backrooms:level_0_manila_wallpaper_block_2",
+    "count": 3
+  }
+}

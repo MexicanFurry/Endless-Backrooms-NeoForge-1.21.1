@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "backrooms:block/level_0_manila_wall",
+    "up": "backrooms:block/level_0_manila_wall_3",
+    "north": "backrooms:block/level_0_manila_wall_1",
+    "east": "backrooms:block/level_0_manila_wall_1",
+    "south": "backrooms:block/level_0_manila_wall_1",
+    "west": "backrooms:block/level_0_manila_wall_1",
+    "particle": "backrooms:block/level_0_manila_wall"
+  },
+  "render_type": "solid"
+}

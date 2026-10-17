@@ -8476,22 +8476,6 @@
       "path": "~/Backrooms"
     },
     {
-      "name": "Hause1",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hause_1",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/hause_1.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/hause_1.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/hause_1_biome_modifier.json"
-        ]
-      },
-      "path": "~/Frontrooms"
-    },
-    {
       "name": "SpawnTheManilaRoom",
       "type": "procedure",
       "compiles": true,
@@ -9298,11 +9282,11 @@
       "CUSTOM:Level0YellowWetCarpet"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
       "~Level0ManilaWallpaperBlock2@CUSTOM:Level0ManilaWallpaperBlock2",
+      "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~Level0ManilaWallpaperBlock1@CUSTOM:Level0ManilaWallpaperBlock1",
       "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
-      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
-      "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~WoodBoards@CUSTOM:WoodBoards",
       "~Level0YellowWallpaperBlockBase@CUSTOM:Level0YellowWallpaperBlockBase",
       "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",

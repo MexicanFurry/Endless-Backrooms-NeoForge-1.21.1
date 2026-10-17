@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:level_0_yellow_wallpaper_block_base"
+    },
+    "title": {
+      "translate": "advancements.enter_level_0.title"
+    },
+    "description": {
+      "translate": "advancements.enter_level_0.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_level_0_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "backrooms:level_0"
+      }
+    }
+  },
+  "parent": "backrooms:first_no_clip"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:fluorescent_lamp_shard"
+    },
+    "title": {
+      "translate": "advancements.enter_level_0_dark_zone.title"
+    },
+    "description": {
+      "translate": "advancements.enter_level_0_dark_zone.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_level_0_dark_zone_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "backrooms:level_0_the_lobby_1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "backrooms:first_no_clip"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/stripped_dark_oak_log",
+    "up": "backrooms:block/level_0_manila_wall",
+    "north": "backrooms:block/level_0_manila_wall_2",
+    "east": "backrooms:block/level_0_manila_wall_2",
+    "south": "backrooms:block/level_0_manila_wall_2",
+    "west": "backrooms:block/level_0_manila_wall_2",
+    "particle": "minecraft:block/stripped_dark_oak_log"
+  },
+  "render_type": "solid"
+}

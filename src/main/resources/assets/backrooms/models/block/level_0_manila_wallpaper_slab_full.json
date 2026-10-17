@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "backrooms:block/level_0_manila_wall",
+    "bottom": "backrooms:block/level_0_manila_wall",
+    "top": "backrooms:block/level_0_manila_wall",
+    "side": "backrooms:block/level_0_manila_wall"
+  },
+  "render_type": "solid"
+}

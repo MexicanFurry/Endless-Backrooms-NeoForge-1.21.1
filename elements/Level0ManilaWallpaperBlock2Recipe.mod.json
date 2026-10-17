@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Level0ManilaWallpaperBlock",
+      "Blocks.STRIPPED_DARK_OAK_WOOD"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:Level0ManilaWallpaperBlock",
+      "CUSTOM:Level0ManilaWallpaperBlock",
+      "CUSTOM:Level0ManilaWallpaperBlock",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "Blocks.STRIPPED_DARK_OAK_WOOD"
+    ],
+    "recipeReturnStack": "CUSTOM:Level0ManilaWallpaperBlock2",
+    "name": "level_0_manila_wallpaper_block_2",
+    "namespace": "mod"
+  }
+}

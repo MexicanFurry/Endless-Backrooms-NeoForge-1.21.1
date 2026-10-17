@@ -1,3 +1,21 @@
+# 0.2.0.000
+
+## ❇️ Added
+- **Compatibility with Immersive Portals!**
+- The **Manila Room** has been added.
+  - Beige Upholstered blocks.
+  - Beige wallpaper rolls.
+- I finally added Advancements to the mod.
+- A new Level 0 biome full of pillars!
+- **Isolation Effect**: If you have this potion active and are near another player, both of you will be invisible. Being inside the _Manila Room_ removes this effect until you leave the room.
+## 🔄️ Changed
+- The room that leads to the Frontrooms is now located at a specific spot on Level 0.
+## ⭕ Deprecated
+## ❌ Removed
+## 🛠️ Fixed
+
+***
+
 # 0.1.1.002
 
 ## ❇️ Added
