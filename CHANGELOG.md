@@ -1,3 +1,15 @@
+# 0.2.1.000
+
+## ❇️ Added
+## 🔄️ Changed
+- A minor correction to the `/noclip` command
+## ⭕ Deprecated
+## ❌ Removed
+## 🛠️ Fixed
+- Appearance of portals inside the Manila room
+
+***
+
 # 0.2.0.000
 
 ## ❇️ Added
@@ -12,6 +24,7 @@
 - The room that leads to the Frontrooms is now located at a specific spot on Level 0.
 ## ⭕ Deprecated
 ## ❌ Removed
+- Portal blocks
 ## 🛠️ Fixed
 
 ***

@@ -8495,25 +8495,6 @@
       "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
     },
     {
-      "name": "TheManilaRoomPlayerEntersDimension",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_manila_room_player_enters_dimension",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mexicanfurry/backrooms/procedures/TheManilaRoomPlayerEntersDimensionProcedure.java"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
-    },
-    {
       "name": "NoClipCommandBackroomsLevels",
       "type": "procedure",
       "compiles": true,
@@ -9556,10 +9537,10 @@
   "workspaceSettings": {
     "modid": "backrooms",
     "modName": "Endless Backrooms",
-    "version": "0.2.0.000",
+    "version": "0.2.1.000",
     "description": "Just a Backrooms mod",
     "author": "Mexican Furry",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/MexicanFurry/Endless-Backrooms-NeoForge-1.21.1",
     "license": "MIT License",
     "serverSideOnly": false,
     "modPicture": "backrooms_icon",

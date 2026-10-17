@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "backrooms:level_0_manila_wallpaper_block_2",
     "backrooms:level_0_manila_wallpaper_stairs",
+    "backrooms:level_0_manila_wallpaper_block_2",
     "backrooms:wood_slab",
     "backrooms:wood_block",
     "backrooms:level_0_yellow_wallpaper_block_base",
