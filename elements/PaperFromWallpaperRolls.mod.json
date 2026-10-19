@@ -6,7 +6,7 @@
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:Level0YellowWallpaperRoll"
+      "TAG:mod:wallpaper_rolls"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,

@@ -35,7 +35,6 @@ public class BackroomsModBlocks {
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_1;
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_2;
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP;
-	public static final DeferredBlock<Block> VOID_BLOCK;
 	static {
 		LEVEL_0_YELLOW_WALLPAPER_BLOCK = REGISTRY.register("level_0_yellow_wallpaper_block", Level0YellowWallpaperBlockBlock::new);
 		LEVEL_0_YELLOW_WET_CARPET_BLOCK = REGISTRY.register("level_0_yellow_wet_carpet_block", Level0YellowWetCarpetBlockBlock::new);
@@ -59,7 +58,6 @@ public class BackroomsModBlocks {
 		LEVEL_0_MANILA_WALLPAPER_BLOCK_1 = REGISTRY.register("level_0_manila_wallpaper_block_1", Level0ManilaWallpaperBlock1Block::new);
 		LEVEL_0_MANILA_WALLPAPER_BLOCK_2 = REGISTRY.register("level_0_manila_wallpaper_block_2", Level0ManilaWallpaperBlock2Block::new);
 		LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP = REGISTRY.register("level_0_manila_room_fluorescent_lamp", Level0ManilaRoomFluorescentLampBlock::new);
-		VOID_BLOCK = REGISTRY.register("void_block", VoidBlockBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -8,16 +8,16 @@
 - The Manila Room
 
 ## 🔨 In Development
-- Megarooms for Level 0
-- The Red Rooms
 
 ## 📅 Planned
+- The Red Rooms
+
+## 💭 Future Ideas
 - The Torment
 - The Dullness
 - Sublevels
 - Uses for items obtained from Level 0
 
-## 💭 Future Ideas
-
 ## ❌ Discarded
+- Megarooms for Level 0
 

@@ -8541,22 +8541,6 @@
       "path": "~/Backrooms/Phenomena/No Clip"
     },
     {
-      "name": "VoidBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "void_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mexicanfurry/backrooms/block/VoidBlockBlock.java",
-          "src/main/resources/data/backrooms/loot_table/blocks/void_block.json",
-          "src/main/resources/assets/backrooms/blockstates/void_block.json",
-          "src/main/resources/assets/backrooms/models/block/void_block.json"
-        ]
-      },
-      "path": "~/Backrooms"
-    },
-    {
       "name": "SpawnLevel0Room5",
       "type": "procedure",
       "compiles": true,
@@ -9119,6 +9103,25 @@
         ]
       },
       "path": "~/Backrooms/Levels/Level 0/World Generation"
+    },
+    {
+      "name": "FlashlightEnergyTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_energy_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mexicanfurry/backrooms/procedures/FlashlightEnergyTimerProcedure.java"
+        ]
+      },
+      "path": "~/Frontrooms"
     }
   ],
   "variable_elements": [
@@ -9193,6 +9196,18 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "FlashlightEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "FlashlightEnergyTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "12000.0"
     }
   ],
   "sound_elements": [
@@ -9263,11 +9278,11 @@
       "CUSTOM:Level0YellowWetCarpet"
     ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
       "~Level0ManilaWallpaperBlock2@CUSTOM:Level0ManilaWallpaperBlock2",
-      "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~Level0ManilaWallpaperBlock1@CUSTOM:Level0ManilaWallpaperBlock1",
       "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
+      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
+      "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~WoodBoards@CUSTOM:WoodBoards",
       "~Level0YellowWallpaperBlockBase@CUSTOM:Level0YellowWallpaperBlockBase",
       "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
@@ -9292,13 +9307,12 @@
       "~Level0YellowWallpaperSlab@CUSTOM:Level0YellowWallpaperSlab",
       "~WoodenSlab@CUSTOM:WoodenSlab"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~VoidBlock@CUSTOM:VoidBlock",
-      "~NotWater@CUSTOM:NotWater"
-    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Level0@Blocks.AIR",
       "~Level0@Blocks.STONE#0"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~NotWater@CUSTOM:NotWater"
     ]
   },
   "tab_element_order": {
@@ -9421,7 +9435,6 @@
       "item.backrooms.level_0_manila_wallpaper_block_1": "Beige Upholstered Block",
       "item.backrooms.level_0_manila_wallpaper_block_2": "Beige Upholstered Block",
       "item.backrooms.level_0_manila_room_fluorescent_lamp": "Fluorescent Lamp",
-      "block.backrooms.void_block": "Void Block",
       "advancements.first_no_clip.descr": "Cross the boundaries of reality for the first time",
       "advancements.first_no_clip.title": "First NoClip",
       "advancements.accidental_no_clip.descr": "Accidentally cross the boundaries of reality!",
@@ -9537,7 +9550,7 @@
   "workspaceSettings": {
     "modid": "backrooms",
     "modName": "Endless Backrooms",
-    "version": "0.2.1.000",
+    "version": "0.2.1.001",
     "description": "Just a Backrooms mod",
     "author": "Mexican Furry",
     "websiteURL": "https://github.com/MexicanFurry/Endless-Backrooms-NeoForge-1.21.1",

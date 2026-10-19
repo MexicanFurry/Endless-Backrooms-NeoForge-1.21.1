@@ -4,7 +4,7 @@
   "pattern": [
     "aba",
     "aca",
-    "ded"
+    "ada"
   ],
   "key": {
     "a": {
@@ -17,9 +17,6 @@
       "item": "minecraft:glowstone_dust"
     },
     "d": {
-      "item": "minecraft:flint"
-    },
-    "e": {
       "item": "backrooms:battery"
     }
   },

@@ -6,11 +6,10 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:FluorescentLampShard",
       "Items.COPPER_INGOT",
+      "CUSTOM:FluorescentLampShard",
       "Items.GLOWSTONE_DUST",
-      "CUSTOM:Battery",
-      "Items.FLINT"
+      "CUSTOM:Battery"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -24,9 +23,9 @@
       "Items.COPPER_INGOT",
       "Items.GLOWSTONE_DUST",
       "Items.COPPER_INGOT",
-      "Items.FLINT",
+      "Items.COPPER_INGOT",
       "CUSTOM:Battery",
-      "Items.FLINT"
+      "Items.COPPER_INGOT"
     ],
     "recipeReturnStack": "CUSTOM:FlashlightOff",
     "name": "flashlight",

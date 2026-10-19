@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "backrooms:block/png_block",
-    "particle": "backrooms:block/png_block"
-  },
-  "render_type": "translucent"
-}

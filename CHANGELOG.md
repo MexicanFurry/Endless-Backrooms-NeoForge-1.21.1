@@ -1,3 +1,16 @@
+# 0.2.1.001
+
+## ❇️ Added
+- Now you can recharge the flashlights, and if the battery runs out, it turns off.
+## 🔄️ Changed
+- Minor changes to the Level 0 biome generation values.
+- Change to the battery and flashlight recipes.
+## ⭕ Deprecated
+## ❌ Removed
+## 🛠️ Fixed
+
+***
+
 # 0.2.1.000
 
 ## ❇️ Added

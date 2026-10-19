@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "backrooms:fluorescent_lamp_shard"
+            "items": "minecraft:copper_ingot"
           }
         ]
       },
@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_ingot"
+            "items": "backrooms:fluorescent_lamp_shard"
           }
         ]
       },
@@ -46,16 +46,6 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_ingredient_4": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:flint"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
@@ -64,8 +54,7 @@
       "has_ingredient_0",
       "has_ingredient_1",
       "has_ingredient_2",
-      "has_ingredient_3",
-      "has_ingredient_4"
+      "has_ingredient_3"
     ]
   ],
   "rewards": {

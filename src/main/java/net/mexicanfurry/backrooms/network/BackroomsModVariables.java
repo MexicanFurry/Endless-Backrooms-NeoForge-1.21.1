@@ -76,6 +76,8 @@ public class BackroomsModVariables {
 		clone.SpontaneousNoClip = original.SpontaneousNoClip;
 		clone.NoClip = original.NoClip;
 		clone.Level0PlayerCurrentFloor = original.Level0PlayerCurrentFloor;
+		clone.FlashlightEnergy = original.FlashlightEnergy;
+		clone.FlashlightEnergyTimer = original.FlashlightEnergyTimer;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -258,6 +260,8 @@ public class BackroomsModVariables {
 		public double SpontaneousNoClip = 72000.0;
 		public double NoClip = 20.0;
 		public double Level0PlayerCurrentFloor = 100.0;
+		public double FlashlightEnergy = 100.0;
+		public double FlashlightEnergyTimer = 12000.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -265,6 +269,8 @@ public class BackroomsModVariables {
 			nbt.putDouble("SpontaneousNoClip", SpontaneousNoClip);
 			nbt.putDouble("NoClip", NoClip);
 			nbt.putDouble("Level0PlayerCurrentFloor", Level0PlayerCurrentFloor);
+			nbt.putDouble("FlashlightEnergy", FlashlightEnergy);
+			nbt.putDouble("FlashlightEnergyTimer", FlashlightEnergyTimer);
 			return nbt;
 		}
 
@@ -273,6 +279,8 @@ public class BackroomsModVariables {
 			SpontaneousNoClip = nbt.getDouble("SpontaneousNoClip");
 			NoClip = nbt.getDouble("NoClip");
 			Level0PlayerCurrentFloor = nbt.getDouble("Level0PlayerCurrentFloor");
+			FlashlightEnergy = nbt.getDouble("FlashlightEnergy");
+			FlashlightEnergyTimer = nbt.getDouble("FlashlightEnergyTimer");
 		}
 
 		public void markSyncDirty() {

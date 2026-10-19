@@ -6,10 +6,9 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "Items.IRON_INGOT",
       "Items.COPPER_INGOT",
       "Items.REDSTONE",
-      "Items.FLINT"
+      "Items.IRON_NUGGET"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -18,14 +17,14 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "Items.COPPER_INGOT",
-      "Items.IRON_INGOT",
+      "Items.IRON_NUGGET",
       "Items.COPPER_INGOT",
       "Items.COPPER_INGOT",
       "Items.REDSTONE",
       "Items.COPPER_INGOT",
-      "Items.FLINT",
-      "Items.FLINT",
-      "Items.FLINT"
+      "Items.COPPER_INGOT",
+      "Items.IRON_NUGGET",
+      "Items.COPPER_INGOT"
     ],
     "recipeReturnStack": "CUSTOM:Battery",
     "name": "battery",
