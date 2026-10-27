@@ -36,5 +36,35 @@ public class BackroomsModFuels {
 			event.setBurnTime(150);
 		else if (itemstack.getItem() == BackroomsModBlocks.WOOD_BOARDS.get().asItem())
 			event.setBurnTime(75);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_1.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_STAIRS.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_SLAB.get().asItem())
+			event.setBurnTime(150);
+		else if (itemstack.getItem() == BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get())
+			event.setBurnTime(50);
+		else if (itemstack.getItem() == BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL_1.get())
+			event.setBurnTime(50);
+		else if (itemstack.getItem() == BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get())
+			event.setBurnTime(50);
+		else if (itemstack.getItem() == BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get())
+			event.setBurnTime(100);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_BLOCK.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_CARPET_BLOCK.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_STAIRS.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_SLAB.get().asItem())
+			event.setBurnTime(150);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_CARPET_STAIRS.get().asItem())
+			event.setBurnTime(300);
+		else if (itemstack.getItem() == BackroomsModBlocks.LEVEL_0_RED_CARPET_SLAB.get().asItem())
+			event.setBurnTime(150);
 	}
 }

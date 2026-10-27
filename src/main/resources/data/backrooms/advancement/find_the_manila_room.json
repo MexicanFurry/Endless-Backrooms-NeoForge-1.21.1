@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "backrooms:level_0_manila_wallpaper_block_2"
+    },
+    "title": {
+      "translate": "advancements.find_the_manila_room.title"
+    },
+    "description": {
+      "translate": "advancements.find_the_manila_room.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "find_the_manila_room_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "backrooms:enter_level_0"
+}

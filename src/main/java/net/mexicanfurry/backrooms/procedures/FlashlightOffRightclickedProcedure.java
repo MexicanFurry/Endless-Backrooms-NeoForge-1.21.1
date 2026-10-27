@@ -51,6 +51,10 @@ public class FlashlightOffRightclickedProcedure {
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("Battery: 100%"), true);
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(BackroomsModItems.BATTERY.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
 				}
 			}
 		}

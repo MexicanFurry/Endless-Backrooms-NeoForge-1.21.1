@@ -35,9 +35,15 @@ public class BackroomsModTabs {
 				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_STAIRS.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_SLAB.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_BLOCK.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_STAIRS.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_SLAB.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_BLOCK.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_STAIRS.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_YELLOW_WET_CARPET_SLAB.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_CARPET_BLOCK.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_CARPET_STAIRS.get().asItem());
+				tabData.accept(BackroomsModBlocks.LEVEL_0_RED_CARPET_SLAB.get().asItem());
 				tabData.accept(BackroomsModBlocks.LEVEL_0_CEILING.get().asItem());
 				tabData.accept(BackroomsModBlocks.FLUORESCENT_LAMP.get().asItem());
 			}).build());
@@ -48,7 +54,9 @@ public class BackroomsModTabs {
 				tabData.accept(BackroomsModItems.LEVEL_0_YELLOW_WALLPAPER_ROLL.get());
 				tabData.accept(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL.get());
 				tabData.accept(BackroomsModItems.LEVEL_0_MANILA_WALLPAPER_ROLL_1.get());
+				tabData.accept(BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get());
 				tabData.accept(BackroomsModItems.LEVEL_0_YELLOW_WET_CARPET.get());
+				tabData.accept(BackroomsModItems.LEVEL_0_RED_CARPET.get());
 				tabData.accept(BackroomsModItems.NOT_WATER_BOTTLE.get());
 				tabData.accept(BackroomsModItems.NOT_WATER_BUCKET.get());
 			}).withTabsBefore(BACKROOMS_BLOCKS.getId()).build());

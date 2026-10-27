@@ -35,6 +35,13 @@ public class BackroomsModBlocks {
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_1;
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_WALLPAPER_BLOCK_2;
 	public static final DeferredBlock<Block> LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP;
+	public static final DeferredBlock<Block> LEVEL_0_RED_WALLPAPER_BLOCK;
+	public static final DeferredBlock<Block> LEVEL_0_RED_CARPET_BLOCK;
+	public static final DeferredBlock<Block> LEVEL_0_RED_WALLPAPER_STAIRS;
+	public static final DeferredBlock<Block> LEVEL_0_RED_WALLPAPER_SLAB;
+	public static final DeferredBlock<Block> LEVEL_0_RED_CARPET_STAIRS;
+	public static final DeferredBlock<Block> LEVEL_0_RED_CARPET_SLAB;
+	public static final DeferredBlock<Block> LEVEL_0_RED_ROOMS_FLUORESCENT_LAMP;
 	static {
 		LEVEL_0_YELLOW_WALLPAPER_BLOCK = REGISTRY.register("level_0_yellow_wallpaper_block", Level0YellowWallpaperBlockBlock::new);
 		LEVEL_0_YELLOW_WET_CARPET_BLOCK = REGISTRY.register("level_0_yellow_wet_carpet_block", Level0YellowWetCarpetBlockBlock::new);
@@ -58,6 +65,13 @@ public class BackroomsModBlocks {
 		LEVEL_0_MANILA_WALLPAPER_BLOCK_1 = REGISTRY.register("level_0_manila_wallpaper_block_1", Level0ManilaWallpaperBlock1Block::new);
 		LEVEL_0_MANILA_WALLPAPER_BLOCK_2 = REGISTRY.register("level_0_manila_wallpaper_block_2", Level0ManilaWallpaperBlock2Block::new);
 		LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP = REGISTRY.register("level_0_manila_room_fluorescent_lamp", Level0ManilaRoomFluorescentLampBlock::new);
+		LEVEL_0_RED_WALLPAPER_BLOCK = REGISTRY.register("level_0_red_wallpaper_block", Level0RedWallpaperBlockBlock::new);
+		LEVEL_0_RED_CARPET_BLOCK = REGISTRY.register("level_0_red_carpet_block", Level0RedCarpetBlockBlock::new);
+		LEVEL_0_RED_WALLPAPER_STAIRS = REGISTRY.register("level_0_red_wallpaper_stairs", Level0RedWallpaperStairsBlock::new);
+		LEVEL_0_RED_WALLPAPER_SLAB = REGISTRY.register("level_0_red_wallpaper_slab", Level0RedWallpaperSlabBlock::new);
+		LEVEL_0_RED_CARPET_STAIRS = REGISTRY.register("level_0_red_carpet_stairs", Level0RedCarpetStairsBlock::new);
+		LEVEL_0_RED_CARPET_SLAB = REGISTRY.register("level_0_red_carpet_slab", Level0RedCarpetSlabBlock::new);
+		LEVEL_0_RED_ROOMS_FLUORESCENT_LAMP = REGISTRY.register("level_0_red_rooms_fluorescent_lamp", Level0RedRoomsFluorescentLampBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

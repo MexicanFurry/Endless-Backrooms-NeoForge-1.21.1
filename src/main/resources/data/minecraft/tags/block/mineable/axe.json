@@ -5,17 +5,23 @@
     "backrooms:level_0_manila_wallpaper_stairs",
     "backrooms:wood_slab",
     "backrooms:wood_block",
-    "backrooms:level_0_yellow_wallpaper_block_base",
+    "backrooms:level_0_red_wallpaper_slab",
     "backrooms:level_0_yellow_wet_carpet_stairs",
+    "backrooms:level_0_yellow_wallpaper_block_base",
     "backrooms:level_0_manila_wallpaper_block_1",
     "backrooms:level_0_yellow_wallpaper_block",
     "backrooms:wood_stairs",
+    "backrooms:level_0_red_carpet_stairs",
+    "backrooms:level_0_red_wallpaper_stairs",
     "backrooms:level_0_yellow_wallpaper_slab",
     "backrooms:level_0_yellow_wet_carpet_slab",
     "backrooms:level_0_yellow_wallpaper_stairs",
+    "backrooms:level_0_red_carpet_slab",
     "backrooms:level_0_manila_wallpaper_block",
     "backrooms:level_0_manila_wallpaper_slab",
     "backrooms:level_0_yellow_wet_carpet_block",
-    "backrooms:wood_boards"
+    "backrooms:level_0_red_wallpaper_block",
+    "backrooms:wood_boards",
+    "backrooms:level_0_red_carpet_block"
   ]
 }

@@ -159,6 +159,48 @@ public class StrippingBackroomsBlocksProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_BLOCK.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_STAIRS.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_SLAB.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_WALLPAPER_ROLL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_BLOCK.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_CARPET.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_STAIRS.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_CARPET.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_SLAB.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(BackroomsModItems.LEVEL_0_RED_CARPET.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
 		}
 	}
 

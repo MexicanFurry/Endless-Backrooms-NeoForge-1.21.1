@@ -9122,6 +9122,425 @@
         ]
       },
       "path": "~/Frontrooms"
+    },
+    {
+      "name": "FindTheManilaRoom",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_the_manila_room",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/find_the_manila_room.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperBlockExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_block_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperBlockExtension1",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_block_extension_1",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperBlockExtension2",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_block_extension_2",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperStairsExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_stairs_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperSlabExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_slab_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperRollExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_roll_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0ManilaWallpaperRollExtension1",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_manila_wallpaper_roll_extension_1",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Manila Room"
+    },
+    {
+      "name": "Level0RedWallpaperBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_wallpaper_block.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedWallpaperBlockBlock.java",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_block.json",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_wallpaper_block.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_wallpaper_block.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/models/item/level_0_red_carpet_block.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_block.json",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_carpet_block.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedCarpetBlockBlock.java",
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_carpet_block.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperRoll",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_roll",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mexicanfurry/backrooms/item/Level0RedWallpaperRollItem.java",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_wallpaper_roll.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_stairs_inner.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_wallpaper_stairs.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_stairs.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_stairs_outer.json",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_wallpaper_stairs.json",
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_wallpaper_stairs.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedWallpaperStairsBlock.java"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_wallpaper_slab.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_wallpaper_slab.json",
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_wallpaper_slab.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_slab_full.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_slab.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_wallpaper_slab_top.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedWallpaperSlabBlock.java"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_carpet_stairs.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_stairs.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_carpet_stairs.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_stairs_outer.json",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_carpet_stairs.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedCarpetStairsBlock.java",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_stairs_inner.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_slab_top.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_slab.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_carpet_slab_full.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedCarpetSlabBlock.java",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_carpet_slab.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_carpet_slab.json",
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_carpet_slab.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperRollExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_roll_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mexicanfurry/backrooms/item/Level0RedCarpetItem.java",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_carpet.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperBlockExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_block_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetBlockExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_block_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperStairsExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_stairs_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperSlabExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_slab_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetStairsExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_stairs_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetSlabExtension",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_slab_extension",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_wallpaper_block_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_wallpaper_block.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_carpet_block_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_carpet_block.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_wallpaper_stairs_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_wallpaper_stairs.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedWallpaperSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_wallpaper_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_wallpaper_slab_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_wallpaper_slab.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_carpet_stairs_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_carpet_stairs.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedCarpetSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_carpet_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/backrooms/advancement/recipes/level_0_red_carpet_slab_recipe.json",
+          "src/main/resources/data/backrooms/recipe/level_0_red_carpet_slab.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
+    },
+    {
+      "name": "Level0RedRoomsFluorescentLamp",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_0_red_rooms_fluorescent_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/backrooms/models/block/level_0_red_rooms_fluorescent_lamp_1.json",
+          "src/main/resources/assets/backrooms/models/item/level_0_red_rooms_fluorescent_lamp.json",
+          "src/main/resources/data/backrooms/loot_table/blocks/level_0_red_rooms_fluorescent_lamp.json",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_rooms_fluorescent_lamp.json",
+          "src/main/java/net/mexicanfurry/backrooms/block/Level0RedRoomsFluorescentLampBlock.java",
+          "src/main/resources/assets/backrooms/models/block/level_0_red_rooms_fluorescent_lamp_0.json",
+          "src/main/resources/assets/backrooms/blockstates/level_0_red_rooms_fluorescent_lamp.json"
+        ]
+      },
+      "path": "~/Backrooms/Levels/Level 0/Rooms/The Red Rooms"
     }
   ],
   "variable_elements": [
@@ -9272,12 +9691,23 @@
     "ITEMS:mod:wallpaper_rolls": [
       "CUSTOM:Level0YellowWallpaperRoll",
       "CUSTOM:Level0ManilaWallpaperRoll",
-      "CUSTOM:Level0ManilaWallpaperRoll1"
+      "CUSTOM:Level0ManilaWallpaperRoll1",
+      "CUSTOM:Level0RedWallpaperRoll"
     ],
     "ITEMS:mod:carpets": [
-      "CUSTOM:Level0YellowWetCarpet"
+      "CUSTOM:Level0YellowWetCarpet",
+      "CUSTOM:Level0RedCarpet"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
+      "~Level0RedCarpetStairs@CUSTOM:Level0RedCarpetStairs",
+      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
+      "~Level0YellowWetCarpetBlock@CUSTOM:Level0YellowWetCarpetBlock",
+      "~Level0RedCarpetSlab@CUSTOM:Level0RedCarpetSlab",
+      "~Level0RedWallpaperSlab@CUSTOM:Level0RedWallpaperSlab",
+      "~Level0RedWallpaperStairs@CUSTOM:Level0RedWallpaperStairs",
+      "~Level0RedCarpetBlock@CUSTOM:Level0RedCarpetBlock",
+      "~Level0RedWallpaperBlock@CUSTOM:Level0RedWallpaperBlock",
       "~Level0ManilaWallpaperBlock2@CUSTOM:Level0ManilaWallpaperBlock2",
       "~Level0ManilaWallpaperBlock1@CUSTOM:Level0ManilaWallpaperBlock1",
       "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
@@ -9285,34 +9715,35 @@
       "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~WoodBoards@CUSTOM:WoodBoards",
       "~Level0YellowWallpaperBlockBase@CUSTOM:Level0YellowWallpaperBlockBase",
-      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
-      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
       "~Level0YellowWallpaperSlab@CUSTOM:Level0YellowWallpaperSlab",
       "~Level0YellowWallpaperStairs@CUSTOM:Level0YellowWallpaperStairs",
       "~WoodenSlab@CUSTOM:WoodenSlab",
       "~WoodenStairs@CUSTOM:WoodenStairs",
       "~WoodenBlock@CUSTOM:WoodenBlock",
-      "~Level0YellowWetCarpetBlock@CUSTOM:Level0YellowWetCarpetBlock",
       "~Level0YellowWallpaperBlock@CUSTOM:Level0YellowWallpaperBlock"
     ],
     "BLOCKS:minecraft:stairs": [
-      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
       "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
+      "~Level0RedCarpetStairs@CUSTOM:Level0RedCarpetStairs",
+      "~Level0RedWallpaperStairs@CUSTOM:Level0RedWallpaperStairs",
+      "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
       "~Level0YellowWallpaperStairs@CUSTOM:Level0YellowWallpaperStairs",
       "~WoodenStairs@CUSTOM:WoodenStairs"
     ],
     "BLOCKS:minecraft:slabs": [
-      "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
       "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
+      "~Level0RedCarpetSlab@CUSTOM:Level0RedCarpetSlab",
+      "~Level0RedWallpaperSlab@CUSTOM:Level0RedWallpaperSlab",
+      "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
       "~Level0YellowWallpaperSlab@CUSTOM:Level0YellowWallpaperSlab",
       "~WoodenSlab@CUSTOM:WoodenSlab"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~NotWater@CUSTOM:NotWater"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Level0@Blocks.AIR",
       "~Level0@Blocks.STONE#0"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~NotWater@CUSTOM:NotWater"
     ]
   },
   "tab_element_order": {
@@ -9330,9 +9761,15 @@
       "Level0ManilaWallpaperBlock2",
       "Level0ManilaWallpaperStairs",
       "Level0ManilaWallpaperSlab",
+      "Level0RedWallpaperBlock",
+      "Level0RedWallpaperStairs",
+      "Level0RedWallpaperSlab",
       "Level0YellowWetCarpetBlock",
       "Level0YellowWetCarpetStairs",
       "Level0YellowWetCarpetSlab",
+      "Level0RedCarpetBlock",
+      "Level0RedCarpetStairs",
+      "Level0RedCarpetSlab",
       "Level0Ceiling",
       "FluorescentLamp"
     ],
@@ -9342,7 +9779,9 @@
       "Level0YellowWallpaperRoll",
       "Level0ManilaWallpaperRoll",
       "Level0ManilaWallpaperRoll1",
+      "Level0RedWallpaperRoll",
       "Level0YellowWetCarpet",
+      "Level0RedCarpet",
       "NotWaterBottle",
       "NotWater"
     ],
@@ -9363,11 +9802,11 @@
       "item.backrooms.level_0_yellow_wet_carpet": "Yellow Wet Carpet",
       "item_group.backrooms.backrooms_blocks": "Backrooms | Blocks",
       "block.backrooms.level_0_yellow_wallpaper_block": "Yellow Upholstered Block",
-      "block.backrooms.level_0_yellow_wet_carpet_block": "Yellow Carpeted Block",
+      "block.backrooms.level_0_yellow_wet_carpet_block": "Yellow Wet Carpeted Block",
       "block.backrooms.level_0_yellow_wallpaper_stairs": "Yellow Upholstered Stairs",
       "block.backrooms.level_0_yellow_wallpaper_slab": "Yellow Upholstered Slab",
-      "block.backrooms.level_0_yellow_wet_carpet_stairs": "Yellow Carpeted Stairs",
-      "block.backrooms.level_0_yellow_wet_carpet_slab": "Yellow Carpeted Slab",
+      "block.backrooms.level_0_yellow_wet_carpet_stairs": "Yellow Wet Carpeted Stairs",
+      "block.backrooms.level_0_yellow_wet_carpet_slab": "Yellow Wet Carpeted Slab",
       "block.backrooms.wood_block": "Wood Block",
       "block.backrooms.wood_stairs": "Wood Stairs",
       "block.backrooms.wood_slab": "Wood Slab",
@@ -9443,7 +9882,19 @@
       "advancements.enter_level_0.title": "The Yellow Lobby",
       "advancements.enter_level_0_dark_zone.title": "Who turned off the light?",
       "advancements.enter_level_0_dark_zone.descr": "Find the dark area on Level 0",
-      "biome.backrooms.level_0_the_lobby_2": "Lobby"
+      "biome.backrooms.level_0_the_lobby_2": "Lobby",
+      "item.backrooms.battery.description_0": "If you have a dead flashlight in your dominant hand and the battery in your non-dominant hand, you can click to recharge the battery.",
+      "advancements.find_the_manila_room.title": "Find The Manila Room",
+      "advancements.find_the_manila_room.descr": "Find the Manila Room during your journey through Level 0.",
+      "block.backrooms.level_0_red_wallpaper_block": "Red Upholstered Block",
+      "block.backrooms.level_0_red_carpet_block": "Red Carpeted Block",
+      "item.backrooms.level_0_red_wallpaper_roll": "Red Wallpaper Roll",
+      "block.backrooms.level_0_red_wallpaper_stairs": "Red Upholstered Stairs",
+      "block.backrooms.level_0_red_wallpaper_slab": "Red Upholstered Slab",
+      "block.backrooms.level_0_red_carpet_stairs": "Red Carpeted Stairs",
+      "block.backrooms.level_0_red_carpet_slab": "Red Carpeted Slab",
+      "item.backrooms.level_0_red_carpet": "Red Carpet",
+      "block.backrooms.level_0_red_rooms_fluorescent_lamp": "Fluorescent Lamp"
     }
   },
   "metadata": {
@@ -9519,6 +9970,10 @@
                       {
                         "name": "The Manila Room",
                         "children": []
+                      },
+                      {
+                        "name": "The Red Rooms",
+                        "children": []
                       }
                     ]
                   }
@@ -9550,7 +10005,7 @@
   "workspaceSettings": {
     "modid": "backrooms",
     "modName": "Endless Backrooms",
-    "version": "0.2.1.001",
+    "version": "0.2.1.002",
     "description": "Just a Backrooms mod",
     "author": "Mexican Furry",
     "websiteURL": "https://github.com/MexicanFurry/Endless-Backrooms-NeoForge-1.21.1",

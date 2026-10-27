@@ -1,3 +1,17 @@
+# 0.2.1.002
+
+## ❇️ Added
+- New Item Tooltip: Battery
+- The Manila Room Advancement
+- New block pack for the upcoming Level 0 room series.
+## 🔄️ Changed
+## ⭕ Deprecated
+## ❌ Removed
+## 🛠️ Fixed
+- Each time you recharge a flashlight, one battery will be removed.
+
+***
+
 # 0.2.1.001
 
 ## ❇️ Added

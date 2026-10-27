@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "backrooms:level_0_yellow_wet_carpet_slab",
+    "backrooms:level_0_red_carpet_slab",
     "backrooms:wood_slab",
+    "backrooms:level_0_red_wallpaper_slab",
     "backrooms:level_0_manila_wallpaper_slab",
     "backrooms:level_0_yellow_wallpaper_slab"
   ]

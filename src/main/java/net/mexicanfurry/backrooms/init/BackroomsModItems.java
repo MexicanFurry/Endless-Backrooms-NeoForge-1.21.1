@@ -54,6 +54,15 @@ public class BackroomsModItems {
 	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_BLOCK_2;
 	public static final DeferredItem<Item> LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP;
 	public static final DeferredItem<Item> LEVEL_0_MANILA_WALLPAPER_ROLL_1;
+	public static final DeferredItem<Item> LEVEL_0_RED_WALLPAPER_BLOCK;
+	public static final DeferredItem<Item> LEVEL_0_RED_CARPET_BLOCK;
+	public static final DeferredItem<Item> LEVEL_0_RED_WALLPAPER_ROLL;
+	public static final DeferredItem<Item> LEVEL_0_RED_WALLPAPER_STAIRS;
+	public static final DeferredItem<Item> LEVEL_0_RED_WALLPAPER_SLAB;
+	public static final DeferredItem<Item> LEVEL_0_RED_CARPET_STAIRS;
+	public static final DeferredItem<Item> LEVEL_0_RED_CARPET_SLAB;
+	public static final DeferredItem<Item> LEVEL_0_RED_CARPET;
+	public static final DeferredItem<Item> LEVEL_0_RED_ROOMS_FLUORESCENT_LAMP;
 	static {
 		LEVEL_0_YELLOW_WALLPAPER_ROLL = REGISTRY.register("level_0_yellow_wallpaper_roll", Level0YellowWallpaperRollItem::new);
 		LEVEL_0_YELLOW_WET_CARPET = REGISTRY.register("level_0_yellow_wet_carpet", Level0YellowWetCarpetItem::new);
@@ -86,6 +95,15 @@ public class BackroomsModItems {
 		LEVEL_0_MANILA_WALLPAPER_BLOCK_2 = block(BackroomsModBlocks.LEVEL_0_MANILA_WALLPAPER_BLOCK_2);
 		LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP = block(BackroomsModBlocks.LEVEL_0_MANILA_ROOM_FLUORESCENT_LAMP);
 		LEVEL_0_MANILA_WALLPAPER_ROLL_1 = REGISTRY.register("level_0_manila_wallpaper_roll_1", Level0ManilaWallpaperRoll1Item::new);
+		LEVEL_0_RED_WALLPAPER_BLOCK = block(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_BLOCK);
+		LEVEL_0_RED_CARPET_BLOCK = block(BackroomsModBlocks.LEVEL_0_RED_CARPET_BLOCK);
+		LEVEL_0_RED_WALLPAPER_ROLL = REGISTRY.register("level_0_red_wallpaper_roll", Level0RedWallpaperRollItem::new);
+		LEVEL_0_RED_WALLPAPER_STAIRS = block(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_STAIRS);
+		LEVEL_0_RED_WALLPAPER_SLAB = block(BackroomsModBlocks.LEVEL_0_RED_WALLPAPER_SLAB);
+		LEVEL_0_RED_CARPET_STAIRS = block(BackroomsModBlocks.LEVEL_0_RED_CARPET_STAIRS);
+		LEVEL_0_RED_CARPET_SLAB = block(BackroomsModBlocks.LEVEL_0_RED_CARPET_SLAB);
+		LEVEL_0_RED_CARPET = REGISTRY.register("level_0_red_carpet", Level0RedCarpetItem::new);
+		LEVEL_0_RED_ROOMS_FLUORESCENT_LAMP = block(BackroomsModBlocks.LEVEL_0_RED_ROOMS_FLUORESCENT_LAMP);
 	}
 
 	// Start of user code block custom items
