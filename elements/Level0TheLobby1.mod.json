@@ -2,10 +2,18 @@
   "_fv": 89,
   "_type": "biome",
   "definition": {
-    "name": "Lobby",
+    "name": "Blackout Lobby",
     "groundBlock": "Blocks.AIR",
     "undergroundBlock": "Blocks.AIR",
     "underwaterBlock": "Blocks.AIR",
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
     "ambientSound": "",
     "additionsSound": "",
     "music": "",
@@ -15,13 +23,13 @@
     "particleToSpawn": "ASH",
     "particlesProbability": 0.5,
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
+    "temperature": 0.45,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.9,
-      "max": 0.1
+      "min": -1.0,
+      "max": -0.5
     },
     "genHumidity": {
       "min": 0.0,

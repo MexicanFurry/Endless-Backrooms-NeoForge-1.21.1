@@ -53,7 +53,7 @@ public class NoClipCommand {
 
 					NoClipCommandBackroomsLevelsProcedure.execute(arguments, entity);
 					return 0;
-				})).then(Commands.literal("room").then(Commands.argument("room", MessageArgument.message()).executes(arguments -> {
+				})).then(Commands.argument("room", MessageArgument.message()).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -67,7 +67,7 @@ public class NoClipCommand {
 
 					NoClipCommandBackroomsRoomsProcedure.execute(arguments, entity);
 					return 0;
-				})))))));
+				}))))));
 	}
 
 }

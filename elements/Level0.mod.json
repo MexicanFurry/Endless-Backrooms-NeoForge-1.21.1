@@ -5,7 +5,8 @@
     "biomesInDimension": [
       "CUSTOM:Level0TheLobby",
       "CUSTOM:Level0TheLobby1",
-      "CUSTOM:Level0TheLobby2"
+      "CUSTOM:Level0TheLobby2",
+      "CUSTOM:Level0RedRooms"
     ],
     "biomesInDimensionCaves": [],
     "worldGenType": "Normal world gen",
@@ -49,7 +50,6 @@
     "maxMonsterSpawnLightLimit": 0,
     "monsterSpawnBlockLightLimit": 0,
     "onPlayerEntersDimension": "Level0PlayerEntersDimension",
-    "onPlayerLeavesDimension": "Level0PlayerLeavesDimension",
     "portalFrame": "",
     "portalParticles": "PORTAL",
     "portalLuminance": 0,

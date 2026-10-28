@@ -44,432 +44,436 @@ public class Level0MovingWallsProcedure {
 			BackroomsModVariables.WorldVariables.get(world).markSyncDirty();
 			if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))) {
 				if (new Vec3(50, 100, 50).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 25 && new Vec3(216, 100, 433).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 25) {
-					if (Math.random() <= 0.8) {
-						if (entity.getLookAngle().x > 0 && entity.getLookAngle().z > 0) {
-							if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+					if (!(world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby_1"))
+							|| world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby_2"))
+							|| world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_red_rooms")))) {
+						if (Math.random() <= 0.8) {
+							if (entity.getLookAngle().x > 0 && entity.getLookAngle().z > 0) {
+								if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							} else if (entity.getLookAngle().x < 0 && entity.getLookAngle().z > 0) {
+								if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							} else if (entity.getLookAngle().x > 0 && entity.getLookAngle().z < 0) {
+								if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							} else if (entity.getLookAngle().x < 0 && entity.getLookAngle().z < 0) {
+								if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else if (Math.random() < 0.1) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										}
 									}
 								}
 							}
-						} else if (entity.getLookAngle().x < 0 && entity.getLookAngle().z > 0) {
-							if (Math.random() < 0.1) {
+						} else {
+							if (Math.random() < 0.25) {
 								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room1"));
 									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
 									}
 								}
-							} else if (Math.random() < 0.1) {
+							} else if (Math.random() < 0.25) {
 								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room2"));
 									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
 									}
 								}
-							} else if (Math.random() < 0.1) {
+							} else if (Math.random() < 0.25) {
 								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room3"));
 									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 									}
 								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
 									}
 								}
-							} else if (Math.random() < 0.1) {
+							} else if (Math.random() < 0.25) {
 								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room4"));
 									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() - 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							}
-						} else if (entity.getLookAngle().x > 0 && entity.getLookAngle().z < 0) {
-							if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() - 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							}
-						} else if (entity.getLookAngle().x < 0 && entity.getLookAngle().z < 0) {
-							if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall1"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall2"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall3"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall4"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall5"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall6"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall7"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall8"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall9"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else if (Math.random() < 0.1) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_wall10"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												BlockPos.containing(entity.getX() + 5, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor, entity.getZ() + 5),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							}
-						}
-					} else {
-						if (Math.random() < 0.25) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room1"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-								}
-							}
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
-								}
-							}
-						} else if (Math.random() < 0.25) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room2"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-								}
-							}
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
-								}
-							}
-						} else if (Math.random() < 0.25) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room3"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-								}
-							}
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("backrooms:lights_on")), SoundSource.AMBIENT, 1, 1, false);
-								}
-							}
-						} else if (Math.random() < 0.25) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("backrooms", "level0_room4"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											BlockPos.containing(entity.getX() - 8, entity.getData(BackroomsModVariables.PLAYER_VARIABLES).Level0PlayerCurrentFloor - 2, entity.getZ() - 8),
-											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 								}
 							}
 						}

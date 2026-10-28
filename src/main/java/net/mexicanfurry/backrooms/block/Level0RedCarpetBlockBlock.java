@@ -8,13 +8,16 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mexicanfurry.backrooms.procedures.Level0RedCarpetBlockEntityWalksOnTheBlockProcedure;
 import net.mexicanfurry.backrooms.init.BackroomsModBlocks;
 
 public class Level0RedCarpetBlockBlock extends Block {
@@ -37,5 +40,11 @@ public class Level0RedCarpetBlockBlock extends Block {
 			return BackroomsModBlocks.WOOD_BLOCK.get().withPropertiesOf(blockstate);
 		}
 		return super.getToolModifiedState(blockstate, context, itemAbility, simulate);
+	}
+
+	@Override
+	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
+		super.stepOn(world, pos, blockstate, entity);
+		Level0RedCarpetBlockEntityWalksOnTheBlockProcedure.execute(world, entity);
 	}
 }

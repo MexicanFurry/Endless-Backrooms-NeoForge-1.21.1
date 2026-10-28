@@ -6,14 +6,14 @@
 - Level 0 Event: Flickering Lights
 - Level 0 Event: Blackout
 - The Manila Room
-
-## 🔨 In Development
-
-## 📅 Planned
 - The Red Rooms
 
-## 💭 Future Ideas
+## 🔨 In Development
 - The Torment
+
+## 📅 Planned
+
+## 💭 Future Ideas
 - The Dullness
 - Sublevels
 - Uses for items obtained from Level 0

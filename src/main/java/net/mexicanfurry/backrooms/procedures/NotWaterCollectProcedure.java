@@ -105,6 +105,66 @@ public class NotWaterCollectProcedure {
 				}
 			}
 		}
+		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_BLOCK.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_STAIRS.get()
+				|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == BackroomsModBlocks.LEVEL_0_RED_CARPET_SLAB.get())
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GLASS_BOTTLE) {
+			if (getEntityGameType(entity) == GameType.CREATIVE) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				if (!hasEntityInInventory(entity, new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()))) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				}
+			} else {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() == 1) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (entity instanceof LivingEntity _entity) {
+						ItemStack _setstack41 = new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()).copy();
+						_setstack41.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack41);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() > 1) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bottle.fill")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(BackroomsModItems.NOT_WATER_BOTTLE.get()).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+			}
+		}
 	}
 
 	private static GameType getEntityGameType(Entity entity) {

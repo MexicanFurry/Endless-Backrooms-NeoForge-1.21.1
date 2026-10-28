@@ -2,10 +2,18 @@
   "_fv": 89,
   "_type": "biome",
   "definition": {
-    "name": "Lobby",
+    "name": "Pillars Lobby",
     "groundBlock": "Blocks.AIR",
     "undergroundBlock": "Blocks.AIR",
     "underwaterBlock": "Blocks.AIR",
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
     "ambientSound": "CUSTOM:level0_ambient",
     "additionsSound": "",
     "music": "",

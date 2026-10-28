@@ -21,7 +21,7 @@
   "gamerule.spontaneousNoClip.description": "Enables or disables the option to do NoClip spontaneously",
   "gamerule.spontaneousNoClip": "doSpontaneousNoClip",
   "biome.backrooms.level_0_the_lobby": "Lobby",
-  "biome.backrooms.level_0_the_lobby_1": "Lobby",
+  "biome.backrooms.level_0_the_lobby_1": "Blackout Lobby",
   "subtitles.level_0_ambient": "",
   "subtitles.level0_ambient": "Ambient sound from the classic Level 0 of the Backrooms",
   "effect.backrooms.hands_in_the_dark": "Hands In The Dark",
@@ -84,7 +84,7 @@
   "advancements.enter_level_0.title": "The Yellow Lobby",
   "advancements.enter_level_0_dark_zone.title": "Who turned off the light?",
   "advancements.enter_level_0_dark_zone.descr": "Find the dark area on Level 0",
-  "biome.backrooms.level_0_the_lobby_2": "Lobby",
+  "biome.backrooms.level_0_the_lobby_2": "Pillars Lobby",
   "item.backrooms.battery.description_0": "If you have a dead flashlight in your dominant hand and the battery in your non-dominant hand, you can click to recharge the battery.",
   "advancements.find_the_manila_room.title": "Find The Manila Room",
   "advancements.find_the_manila_room.descr": "Find the Manila Room during your journey through Level 0.",
@@ -96,5 +96,12 @@
   "block.backrooms.level_0_red_carpet_stairs": "Red Carpeted Stairs",
   "block.backrooms.level_0_red_carpet_slab": "Red Carpeted Slab",
   "item.backrooms.level_0_red_carpet": "Red Carpet",
-  "block.backrooms.level_0_red_rooms_fluorescent_lamp": "Fluorescent Lamp"
+  "block.backrooms.level_0_red_rooms_fluorescent_lamp": "Fluorescent Lamp",
+  "biome.backrooms.level_0_red_rooms": "Red Lobby",
+  "advancements.find_the_red_rooms.descr": "Find the red lobby of Level 0.",
+  "advancements.find_the_red_rooms.title": "Find the Red Rooms",
+  "advancements.get_lost_in_the_red_rooms.descr": "You went too far into this place.",
+  "advancements.get_lost_in_the_red_rooms.title": "Get Lost in the Red Rooms",
+  "advancements.escape_the_red_rooms.title": "Back to Level 0.",
+  "advancements.escape_the_red_rooms.descr": "Escape from the Red Rooms."
 }

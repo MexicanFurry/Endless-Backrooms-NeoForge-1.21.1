@@ -14,7 +14,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
 
-import net.mexicanfurry.backrooms.procedures.Level0PlayerLeavesDimensionProcedure;
 import net.mexicanfurry.backrooms.procedures.Level0PlayerEntersDimensionProcedure;
 
 @EventBusSubscriber
@@ -45,11 +44,8 @@ public class Level0Dimension {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		if (event.getFrom() == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))) {
-			Level0PlayerLeavesDimensionProcedure.execute(world);
-		}
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))) {
-			Level0PlayerEntersDimensionProcedure.execute(world, x, z, entity);
+			Level0PlayerEntersDimensionProcedure.execute(x, z, entity);
 		}
 	}
 }

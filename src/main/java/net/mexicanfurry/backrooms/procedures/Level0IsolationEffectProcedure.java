@@ -15,7 +15,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.core.BlockPos;
 
 import net.mexicanfurry.backrooms.init.BackroomsModMobEffects;
 
@@ -35,11 +34,14 @@ public class Level0IsolationEffectProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby"))
-				|| world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby_1")))
+		if (((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))
 				&& (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))
-				&& world.players().size() > 1 && (entity != null ? entity.distanceTo(entity) : -1) >= 1 && (entity != null ? entity.distanceTo(entity) : -1) <= 100
-				&& new Vec3(58, 100, 58).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 5) {
+				&& world.players().size() > 1
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:the_red_rooms"))
+						&& (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == ResourceKey.create(Registries.DIMENSION,
+								ResourceLocation.parse("backrooms:the_red_rooms"))
+						&& world.players().size() > 1)
+				&& (entity != null ? entity.distanceTo(entity) : -1) >= 1 && (entity != null ? entity.distanceTo(entity) : -1) <= 100 && new Vec3(58, 100, 58).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 5) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(BackroomsModMobEffects.ISOLATION, 100, 0, false, false));
 		}

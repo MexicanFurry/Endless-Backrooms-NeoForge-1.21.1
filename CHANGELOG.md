@@ -1,3 +1,17 @@
+# 0.3.0.000
+
+## ❇️ Added
+- New Room: The Red Lobby/The Red Rooms.
+## 🔄️ Changed
+- Change in the values of Level 0 biomes.
+- Retexture carpets
+## ⭕ Deprecated
+- Level 0 Pillars Biome.
+## ❌ Removed
+## 🛠️ Fixed
+
+***
+
 # 0.2.1.002
 
 ## ❇️ Added
