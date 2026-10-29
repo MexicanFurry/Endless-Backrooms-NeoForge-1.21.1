@@ -1,3 +1,15 @@
+# 0.3.1.000
+
+## ❇️ Added
+## 🔄️ Changed
+## ⭕ Deprecated
+## ❌ Removed
+- Level 0 Pillars Biome.
+## 🛠️ Fixed
+- Previously, you could unlock the Manila Room by reaching certain coordinates in any dimension. This has been fixed, and now it can only be unlocked on Level 0.
+
+***
+
 # 0.3.0.000
 
 ## ❇️ Added

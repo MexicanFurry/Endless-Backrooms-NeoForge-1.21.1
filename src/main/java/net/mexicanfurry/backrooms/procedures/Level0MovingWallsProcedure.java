@@ -44,9 +44,7 @@ public class Level0MovingWallsProcedure {
 			BackroomsModVariables.WorldVariables.get(world).markSyncDirty();
 			if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("backrooms:level_0"))) {
 				if (new Vec3(50, 100, 50).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 25 && new Vec3(216, 100, 433).distanceTo(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))) > 25) {
-					if (!(world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby_1"))
-							|| world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby_2"))
-							|| world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_red_rooms")))) {
+					if (world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("backrooms:level_0_the_lobby"))) {
 						if (Math.random() <= 0.8) {
 							if (entity.getLookAngle().x > 0 && entity.getLookAngle().z > 0) {
 								if (Math.random() < 0.1) {

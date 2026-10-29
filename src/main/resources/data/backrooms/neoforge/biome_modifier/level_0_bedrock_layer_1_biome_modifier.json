@@ -3,7 +3,6 @@
   "biomes": [
     "backrooms:level_0_the_lobby",
     "backrooms:level_0_the_lobby_1",
-    "backrooms:level_0_the_lobby_2",
     "backrooms:level_0_red_rooms"
   ],
   "features": "backrooms:level_0_bedrock_layer_1",

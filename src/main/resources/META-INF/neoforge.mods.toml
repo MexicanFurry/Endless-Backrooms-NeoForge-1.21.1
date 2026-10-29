@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="backrooms"
-version="0.3.0.000"
+version="0.3.1.000"
 displayName="Endless Backrooms"
 displayURL="https://github.com/MexicanFurry/Endless-Backrooms-NeoForge-1.21.1"
 logoFile="logo.png"

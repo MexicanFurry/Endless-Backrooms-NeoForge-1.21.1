@@ -8587,499 +8587,6 @@
       "path": "~/Backrooms/Levels/Level 0"
     },
     {
-      "name": "Level0TheLobby2",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_the_lobby_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/biome/level_0_the_lobby_2.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0"
-    },
-    {
-      "name": "Level0PillarsFloor1",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_1",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_1.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_1_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_1.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor2",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_2",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_2.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_2_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_2.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor3",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_3",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_3.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_3.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_3_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor4",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_4",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_4_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_4.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_4.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor5",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_5",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_5.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_5.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_5_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor6",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_6",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_6_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_6.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_6.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor7",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_7",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_7.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_7_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_7.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor8",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_8",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_8_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_8.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_8.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor9",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_9",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_9.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_9.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_9_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor10",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_10",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_10.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_10_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_10.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor11",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_11",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_11.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_11_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_11.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor12",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_12",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_12_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_12.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_12.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor13",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_13",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_13.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_13.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_13_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor14",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_14",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_14_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_14.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_14.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor15",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_15",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_15.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_15.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_15_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor16",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_16",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_16_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_16.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_16.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor17",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_17",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_17.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_17_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_17.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor18",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_18",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_18.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_18_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_18.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor19",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_19",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_19.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_19_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_19.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor20",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_20",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_20.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_20_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_20.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor21",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_21",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_21.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_21.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_21_biome_modifier.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor22",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_22",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_22_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_22.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_22.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor23",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_23",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_23_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_23.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_23.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor24",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_24",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_24_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_24.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_24.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor25",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_25",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_25.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_25_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_25.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor26",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_26",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_26.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_26_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_26.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor27",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_27",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_27_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_27.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_27.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor28",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_28",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_28.json",
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_28_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_28.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor29",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_29",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_29_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_29.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_29.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
-      "name": "Level0PillarsFloor30",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "level_0_pillars_floor_30",
-      "metadata": {
-        "has_nbt_structure": true,
-        "files": [
-          "src/main/resources/data/backrooms/neoforge/biome_modifier/level_0_pillars_floor_30_biome_modifier.json",
-          "src/main/resources/data/backrooms/worldgen/placed_feature/level_0_pillars_floor_30.json",
-          "src/main/resources/data/backrooms/worldgen/configured_feature/level_0_pillars_floor_30.json"
-        ]
-      },
-      "path": "~/Backrooms/Levels/Level 0/World Generation"
-    },
-    {
       "name": "FlashlightEnergyTimer",
       "type": "procedure",
       "compiles": true,
@@ -16574,14 +16081,11 @@
       "CUSTOM:Level0RedCarpet"
     ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~Level0RedCarpetBlock@CUSTOM:Level0RedCarpetBlock",
-      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
-      "~Level0RedCarpetStairs@CUSTOM:Level0RedCarpetStairs",
-      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
-      "~Level0YellowWetCarpetBlock@CUSTOM:Level0YellowWetCarpetBlock",
       "~Level0RedCarpetSlab@CUSTOM:Level0RedCarpetSlab",
+      "~Level0RedCarpetStairs@CUSTOM:Level0RedCarpetStairs",
       "~Level0RedWallpaperSlab@CUSTOM:Level0RedWallpaperSlab",
       "~Level0RedWallpaperStairs@CUSTOM:Level0RedWallpaperStairs",
+      "~Level0RedCarpetBlock@CUSTOM:Level0RedCarpetBlock",
       "~Level0RedWallpaperBlock@CUSTOM:Level0RedWallpaperBlock",
       "~Level0ManilaWallpaperBlock2@CUSTOM:Level0ManilaWallpaperBlock2",
       "~Level0ManilaWallpaperBlock1@CUSTOM:Level0ManilaWallpaperBlock1",
@@ -16590,35 +16094,38 @@
       "~Level0ManilaWallpaperBlock@CUSTOM:Level0ManilaWallpaperBlock",
       "~WoodBoards@CUSTOM:WoodBoards",
       "~Level0YellowWallpaperBlockBase@CUSTOM:Level0YellowWallpaperBlockBase",
+      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
+      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
       "~Level0YellowWallpaperSlab@CUSTOM:Level0YellowWallpaperSlab",
       "~Level0YellowWallpaperStairs@CUSTOM:Level0YellowWallpaperStairs",
       "~WoodenSlab@CUSTOM:WoodenSlab",
       "~WoodenStairs@CUSTOM:WoodenStairs",
       "~WoodenBlock@CUSTOM:WoodenBlock",
+      "~Level0YellowWetCarpetBlock@CUSTOM:Level0YellowWetCarpetBlock",
       "~Level0YellowWallpaperBlock@CUSTOM:Level0YellowWallpaperBlock"
     ],
     "BLOCKS:minecraft:stairs": [
-      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
       "~Level0RedCarpetStairs@CUSTOM:Level0RedCarpetStairs",
       "~Level0RedWallpaperStairs@CUSTOM:Level0RedWallpaperStairs",
       "~Level0ManilaWallpaperStairs@CUSTOM:Level0ManilaWallpaperStairs",
+      "~Level0YellowWetCarpetStairs@CUSTOM:Level0YellowWetCarpetStairs",
       "~Level0YellowWallpaperStairs@CUSTOM:Level0YellowWallpaperStairs",
       "~WoodenStairs@CUSTOM:WoodenStairs"
     ],
     "BLOCKS:minecraft:slabs": [
-      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
       "~Level0RedCarpetSlab@CUSTOM:Level0RedCarpetSlab",
       "~Level0RedWallpaperSlab@CUSTOM:Level0RedWallpaperSlab",
       "~Level0ManilaWallpaperSlab@CUSTOM:Level0ManilaWallpaperSlab",
+      "~Level0YellowWetCarpetSlab@CUSTOM:Level0YellowWetCarpetSlab",
       "~Level0YellowWallpaperSlab@CUSTOM:Level0YellowWallpaperSlab",
       "~WoodenSlab@CUSTOM:WoodenSlab"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~NotWater@CUSTOM:NotWater"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Level0@Blocks.AIR",
       "~Level0@Blocks.STONE#0"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~NotWater@CUSTOM:NotWater"
     ]
   },
   "tab_element_order": {
@@ -16757,7 +16264,6 @@
       "advancements.enter_level_0.title": "The Yellow Lobby",
       "advancements.enter_level_0_dark_zone.title": "Who turned off the light?",
       "advancements.enter_level_0_dark_zone.descr": "Find the dark area on Level 0",
-      "biome.backrooms.level_0_the_lobby_2": "Pillars Lobby",
       "item.backrooms.battery.description_0": "If you have a dead flashlight in your dominant hand and the battery in your non-dominant hand, you can click to recharge the battery.",
       "advancements.find_the_manila_room.title": "Find The Manila Room",
       "advancements.find_the_manila_room.descr": "Find the Manila Room during your journey through Level 0.",
@@ -16892,7 +16398,7 @@
   "workspaceSettings": {
     "modid": "backrooms",
     "modName": "Endless Backrooms",
-    "version": "0.3.0.000",
+    "version": "0.3.1.000",
     "description": "Just a Backrooms mod",
     "author": "Mexican Furry",
     "websiteURL": "https://github.com/MexicanFurry/Endless-Backrooms-NeoForge-1.21.1",
